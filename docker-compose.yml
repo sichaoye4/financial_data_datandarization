@@ -1,0 +1,23 @@
+services:
+  workbench:
+    build:
+      context: .
+    ports:
+      - "${API_PORT:-8000}:8000"
+    environment:
+      DEEPSEEK_BASE_URL: ${DEEPSEEK_BASE_URL:-https://api.deepseek.com}
+      DEEPSEEK_MODEL: ${DEEPSEEK_MODEL:-deepseek-v4-flash}
+      DEEPSEEK_THINKING: ${DEEPSEEK_THINKING:-enabled}
+      DEEPSEEK_MAX_TOKENS: ${DEEPSEEK_MAX_TOKENS:-4096}
+      DEEPSEEK_API_KEY_FILE: /run/secrets/deepseek_api_key
+    volumes:
+      - type: bind
+        source: ${DEEPSEEK_API_KEY_FILE_HOST:-./llm_key.txt}
+        target: /run/secrets/deepseek_api_key
+        read_only: true
+      - type: volume
+        source: workbench-runtime
+        target: /app/backend/runtime
+
+volumes:
+  workbench-runtime:

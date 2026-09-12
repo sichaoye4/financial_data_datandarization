@@ -1,0 +1,14 @@
+backend/.venv/
+backend/runtime/
+frontend/node_modules/
+e2e/node_modules/
+frontend/dist/
+graphify-out/
+.pnpm-store/
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+llm_key.txt

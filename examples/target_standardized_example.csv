@@ -1,0 +1,3 @@
+customer_id,reporting_date,currency,total_revenue,operating_expense,net_profit
+EXAMPLE-001,2025-12-31,SGD,1250000,825000,425000
+EXAMPLE-002,2025-12-31,USD,960000,610000,350000

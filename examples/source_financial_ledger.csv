@@ -1,0 +1,7 @@
+CIF,Report_Date,Currency,Line_Item,Amount
+NS-1001,31/12/2025,SGD,Revenue,"1,250,000"
+NS-1001,31/12/2025,SGD,Operating Expense,"825,000"
+NS-1001,31/12/2025,SGD,Net Profit,"425,000"
+NS-1002,31/12/2025,USD,Revenue,960000
+NS-1002,31/12/2025,USD,Operating Expense,610000
+NS-1002,31/12/2025,USD,Net Profit,350000

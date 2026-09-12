@@ -1,0 +1,7 @@
+Expected standardized layout,,,,,,,
+,,,,,,,
+,customer_id,reporting_date,currency,total_revenue,operating_expense,net_profit,
+,EXAMPLE-001,2025-12-31,SGD,1250000.00,840000.00,410000.00,
+,EXAMPLE-002,2025-12-31,USD,970000.00,620000.00,350000.00,
+,,,,,,,
+,End of sample,,,,,,

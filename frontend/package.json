@@ -1,0 +1,22 @@
+{
+  "name": "financial-data-standardization-workbench-web",
+  "private": true,
+  "version": "0.2.0",
+  "packageManager": "pnpm@11.19.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview",
+    "test:e2e": "node ../e2e/workbench.e2e.cjs"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "playwright-core": "1.62.1",
+    "vite": "^7.1.5"
+  }
+}
